@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Style Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="form-section">
+        <h1 class="form-title">Create an Account</h1>
+        <form class="form" autocomplete="off">
+          <div class="form-item">
+            <label for="first name" class="form__label">First name</label>
+            <input type="text" id="first name" class="form__input" />
+          </div>
+          <div class="form-item">
+            <label for="last name" class="form__label">Last name</label>
+            <input type="text" id="last name" class="form__input" />
+          </div>
+          <div class="full-size">
+            <label for="mail" class="form__label">User mail</label>
+            <input
+              type="email"
+              id="mail"
+              class="form__input input_full"
+              required
+            />
+            <p class="bottom__text">
+              We'll never share your email with anyone else.
+            </p>
+          </div>
+
+          <div class="form__gender full-size">
+            <div class="gender__item">
+              <label class="gender-label">
+                <input type="radio" name="gender" class="input_radio" />
+                <span class="gender__check"></span>
+                Male
+              </label>
+              <label class="gender-label">
+                <input type="radio" name="gender" class="input_radio" />
+                <span class="gender__check"></span>
+                Female
+              </label>
+            </div>
+          </div>
+          <div class="form-item">
+            <p class="select__title">Country</p>
+            <select name="country" class="form__select">
+              <option value="" selected disabled>Select</option>
+              <option value="ukr">Ukraine</option>
+              <option value="swe">Sweden</option>
+              <option value="pol">Poland</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="city" class="form__label">City</label>
+            <input type="text" id="city" class="form__input" />
+          </div>
+
+          <div class="buttons full-size">
+            <button type="submit" class="button">Sign Up</button>
+          </div>
+        </form>
+        <div class="form-item">
+          <p class="terms">
+            By clicking the 'Sign Up' button, you confirm that you accept our
+            <a href="#">Terms of Use</a>and <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="footer">
+          <p>Have an account? <a href="#">Log In</a></p>
+        </div>
+      </section>
+      <section class="form-section">
+        <h1 class="form-title">Profile</h1>
+
+        <form class="form" autocomplete="off">
+          <div class="form-avatar">
+            <div class="photo">
+              <img
+                src="./assets/img/Image.png"
+                alt="Your photo"
+                class="profile-photo"
+              />
+              <label for="avatar"></label>
+            </div>
+            <div class="file">
+              <input
+                type="file"
+                id="file"
+                name="file"
+                class="input-file"
+                accept="image/png, image/jpeg"
+              />
+              <label for="file"><span></span></label>
+              <p class="terms">Up to 1 MB (300x300 px)</p>
+            </div>
+          </div>
+          <img src="./assets/img/Right Icon.png" alt="del" class="form-del" />
+
+          <div class="form-item">
+            <label for="name" class="form__label">First name</label>
+            <input type="text" id="name" class="form__input" />
+          </div>
+
+          <div class="form-item">
+            <label for="email" class="form__label">User mail</label>
+            <input type="email" id="email" class="form__input" required />
+          </div>
+
+          <div class="form-item">
+            <p class="select__title">Country</p>
+            <select name="country" class="form__select">
+              <option value="" selected disabled>Select</option>
+              <option value="ukr">Ukraine</option>
+              <option value="swe">Sweden</option>
+              <option value="pol">Poland</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="p city" class="form__label">City</label>
+            <input type="text" id="p city" class="form__input" />
+          </div>
+          <div class="form-item">
+            <label for="zip code" class="form__label">Last name</label>
+            <input type="number" id="zip code" class="form__input" />
+          </div>
+          <div class="form-item">
+            <label for="phonee" class="form__label">Last name</label>
+            <input type="number" id="phone" class="form__input" />
+          </div>
+
+          <div class="buttons">
+            <button type="submit" class="button button__small">Update</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
